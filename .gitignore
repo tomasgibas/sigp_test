@@ -1,23 +1,37 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+node_modules
+public/dist/bundle.js
+old_client/*
+old_client
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.idea
+npm-debug.log
+.sass-cache
+*/*.log
+dist/*
+public/dist/*
+public/dist/*.js
+public/dist/*.eot
+public/dist/*.ttf
+public/dist/*.svg
+public/dist/*.gif
+public/dist/*.png
+public/dist/*.sass
+public/dist/*.map
+public/dist/styles.css
+public/temp/*.mid
+public/temp/*.mp3
+public/temp/*.mp4
+public/temp/*.m4a
+public/temp/*.jpg
+public/temp/*.png
+public/temp/thumbnails/*.png
+public/temp/thumbnails/*.jpg
+server/newrelic_agent.log
+server/temp/*.csv
+server/temp/*.png
+server/temp/*.svg
+test/test.js
+newrelic_agent.log
+package-lock.json
+sessions
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*

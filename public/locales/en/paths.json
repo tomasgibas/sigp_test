@@ -1,0 +1,5 @@
+{
+    "Search": "/search",
+    "Detail": "/movies/{{movieID}}",
+    "Favorites": "/favorites"
+}

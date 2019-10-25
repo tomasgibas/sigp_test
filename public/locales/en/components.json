@@ -1,0 +1,11 @@
+{
+    "menu": {
+        "Search": "Search",
+        "Favorites": "Favorite"
+    },
+    "MoviesList": {
+        "year": "Year",
+        "type": "Type",
+        "noData": "No movies found"
+    }
+}

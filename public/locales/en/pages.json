@@ -1,0 +1,20 @@
+{
+    "Search": {
+        "searchPlaceholder": "Type search term"
+    },
+    "MovieDetail": {
+        "error": "Cannot load the movie",
+        "removeFavorite": "Remove from favorites",
+        "addFavorite": "Add to favorites"
+    },
+    "Runtime": "Runtime",
+    "Genre": "Genre",
+    "Director": "Director",
+    "Writer": "Writer",
+    "Actors": "Actors",
+    "Plot": "Plot",
+    "Country": "Country",
+    "Awards": "Awards",
+    "BoxOffice": "Box Office",
+    "Production": "Production"
+}

@@ -1,0 +1,146 @@
+// Colors
+
+$primaryColor: #A6161C
+$primaryColorHover: rgba(166, 22, 28, 0.8)
+$backgroundColor: #FFFFFF
+$placeholderBackgroundColor: #FFFFFF
+$fontColor: #000000
+
+$z-index-popup: 100
+
+// Basic styles
+
+a, a:not([href]):not([tabindex])
+  color: $primaryColor
+  font-weight: bold
+  cursor: pointer
+  text-decoration: none
+
+*
+  box-sizing: border-box
+  line-height: 1.4
+  outline: 0
+
+html, body
+  font-family: 'Nunito Sans', sans-serif
+  font-size: 12px
+  background: #f6f7fb
+  width: 100%
+  height: 100%
+  padding: 0
+  margin: 0
+
+
+h1, h2, h3, h4, h5, p
+  font-family: 'Nunito Sans', sans-serif
+
+h1
+  font-size: 40px
+  font-weight: bold
+  text-align: left
+  line-height: 40px
+
+h2
+  font-size: 24px
+  line-height: 26px
+
+h3
+  font-size: 16px
+  font-weight: normal
+
+h4
+  font-size: 14px
+  font-weight: 700
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+strong
+  font-weight: 600
+
+textarea
+  resize: none
+
+table
+  margin: 0
+  padding: 0
+  background: none
+  border: none
+  border-collapse: collapse
+  border-spacing: 0
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  -moz-appearance: none
+  margin: 0
+
+@media (min-width: 1400px)
+  .container
+    max-width: 1340px
+
+a
+  color: #2D2640
+  text-decoration: underline
+
+#root
+  height: 100%
+
+.body
+  height: 100%
+  position: relative
+
+.layout.ant-layout
+  height: 100%
+  background-color: white
+
+.ant-layout-content
+  background-color: white
+  overflow: scroll
+
+// Menu
+
+.ant-menu.ant-menu-horizontal
+  line-height: 64px
+  .ant-menu-item
+    line-height: 64px
+
+
+// List
+
+.movie-list-item
+  display: flex
+  align-items: start
+  .movie-poster
+    background: white center no-repeat
+    background-size: contain
+    width: 100px
+    height: 150px
+  .movie-info
+    margin-left: 15px
+    .title
+      margin-bottom: 15px
+      font-size: 16px
+      font-weight: bold
+
+// Detail
+
+.movie-detail
+  display: flex
+  align-items: start
+  .movie-poster
+    background: white center no-repeat
+    background-size: contain
+    width: 300px
+    height: 450px
+  .movie-meta
+    margin-left: 30px
+    .title
+      font-size: 32px
+      font-weight: bold
+    .meta-item
+      font-size: 24px
+      .item-type
+        font-weight: bolder

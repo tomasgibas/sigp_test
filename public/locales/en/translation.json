@@ -1,0 +1,9 @@
+{
+    "documentTitle": "SIGP Test App",
+    "movieType": {
+        "movie": "Movie",
+        "series": "Series",
+        "episode": "Episode",
+        "game": "Game"
+    }
+}
