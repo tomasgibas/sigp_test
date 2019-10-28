@@ -14,7 +14,7 @@ import { State } from '../../reducers'
 
 type Props = WithTranslation & {
 	actions: {
-		toggleFavorite: (item: MovieListItem) => void
+		toggleFavorite: (item: MovieItem) => void
 	},
 	favorites: MovieItem[]
 	locationParams: { [key: string]: string }

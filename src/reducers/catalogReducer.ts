@@ -1,19 +1,15 @@
-import { ACTION_TYPE, StateAction } from '../types/state'
+import { ACTION_TYPE } from '../types/state'
 import { CATALOG_ACTION } from '../sagas/catalogSaga'
 import { State } from './index'
-import { MovieItem } from '../types/data'
+import { CatalogAction, CatalogState } from '../types/reducers'
 
-export type CatalogState = {
-	favorites: MovieItem[]
-}
-
-export const initState: CatalogState = {
+const initState: CatalogState = {
 	favorites: []
 }
 
 export const selectFavorites = (state: State) => [...state.catalog.favorites]
 
-export default (state: CatalogState = initState, action: StateAction): CatalogState => {
+export default (state: CatalogState = initState, action: CatalogAction): CatalogState => {
 	switch (action.type) {
 		case CATALOG_ACTION.FAVORITES_SET:
 			return {

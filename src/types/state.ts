@@ -1,11 +1,9 @@
 import { Action } from 'redux'
 
-export const ACTION_TYPE = {
-	RESET_STORE: 'RESET_STORE'
+export enum ACTION_TYPE {
+	RESET_STORE = 'RESET_STORE'
 }
 
-export type StateAction = Action & {
-	type: string,
-	payload?: any,
-	meta?: object
+export type StateAction<T = any, M = any> = Action<T> & {
+	payload: M
 }

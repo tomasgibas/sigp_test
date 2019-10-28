@@ -3,14 +3,14 @@ import { find, filter } from 'lodash'
 
 import { selectFavorites } from '../reducers/catalogReducer'
 import { MovieListItem } from '../types/data'
-import { StateAction } from '../types/state'
+import { ToggleFavoriteCatalogAction } from '../types/reducers'
 
 export enum CATALOG_ACTION {
 	FAVORITES_SET = 'CATALOG/FAVORITES_SET',
 	FAVORITE_TOGGLE = 'CATALOG/FAVORITE_TOGGLE'
 }
 
-function* toggleFavorite(action: StateAction) {
+function* toggleFavorite(action: ToggleFavoriteCatalogAction) {
 	const favorites = yield select(selectFavorites)
 
 	const favorite = find(favorites, (item: MovieListItem) => item.imdbID === action.payload.imdbID)

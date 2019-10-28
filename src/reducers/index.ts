@@ -3,7 +3,9 @@ import { persistReducer } from 'redux-persist'
 
 import storageLocal from 'redux-persist/lib/storage'
 
-import catalogReducer, { CatalogState } from './catalogReducer'
+import { CatalogState } from '../types/reducers'
+
+import catalogReducer from './catalogReducer'
 
 export type State = {
 	catalog: CatalogState
